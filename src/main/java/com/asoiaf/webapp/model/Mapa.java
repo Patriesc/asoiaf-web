@@ -1,11 +1,11 @@
 package com.asoiaf.webapp.model;
 
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
+import javax.persistence.*;
 import javax.validation.constraints.NotNull;
 import java.io.Serializable;
 
+@Entity
+@Table(name = "mapas")
 public class Mapa implements Serializable {
 
     @Id

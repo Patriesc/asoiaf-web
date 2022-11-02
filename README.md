@@ -7,4 +7,4 @@
  En ella prodemos acceder a las instrucciones del juego y las características de cada casa y sus personajes.
  También se contará con un sistema de registro de usuarios.
  
- De momento están creados los modelos de las clases con los que luego trabajaremos en nuestra web.
+ De momento están creados los modelos de las clases y un template con los que luego trabajaremos en nuestra web.

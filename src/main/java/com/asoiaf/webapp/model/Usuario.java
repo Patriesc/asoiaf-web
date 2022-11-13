@@ -14,10 +14,19 @@ public class Usuario implements Serializable {
     @NotNull
     private String email;
     private String nombre;
+    private String role;
     private String contraseña;
     private String casaElegida;
 
     public Usuario() {
+    }
+
+    public Usuario(String email) {
+        this.email = email;
+    }
+
+    public boolean checkPassword(String password){
+        return contraseña.equals(password);
     }
 
     public Long getId() {
@@ -26,6 +35,14 @@ public class Usuario implements Serializable {
 
     public void setId(Long id) {
         this.id = id;
+    }
+
+    public String getRole() {
+        return role;
+    }
+
+    public void setRole(String role) {
+        this.role = role;
     }
 
     public String getEmail() {

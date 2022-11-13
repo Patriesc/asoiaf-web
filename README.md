@@ -18,6 +18,11 @@
  
  ![Screenshot 2022-11-13 214839](https://user-images.githubusercontent.com/98825807/201545201-6f0a2895-6c9b-47ee-8acc-9c319d6489df.png)
 
+Página de registro:
+
+![Screenshot 2022-11-13 222746](https://user-images.githubusercontent.com/98825807/201545457-7d912d93-3c66-47a5-95a6-0fb9d755755e.png)
+
+
 
 Página login:
 

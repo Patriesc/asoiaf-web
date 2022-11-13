@@ -41,7 +41,7 @@ public class LoginController {
 
             managerUserSession.logearUsuario(usuario.getId());
 
-            return "redirect:/usuarios/" + usuario.getId() + "/tareas";
+            return "redirect:/";
         } else if (loginStatus == UsuarioService.LoginStatus.USER_NOT_FOUND) {
             model.addAttribute("error", "No existe usuario");
             return "formLogin";
@@ -73,9 +73,10 @@ public class LoginController {
 
         Usuario usuario = new Usuario(registroData.geteMail());
         usuario.setNombre(registroData.getNombre());
+        usuario.setPassword(registroData.getPassword());
 
         usuarioService.registrar(usuario);
-        return "redirect:/login";
+        return "redirect:/";
    }
 
    @GetMapping("/logout")

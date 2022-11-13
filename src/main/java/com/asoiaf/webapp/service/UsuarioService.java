@@ -25,7 +25,7 @@ public class UsuarioService {
         Optional<Usuario> usuario = usuarioRepository.findByEmail(eMail);
         if (!usuario.isPresent()) {
             return LoginStatus.USER_NOT_FOUND;
-        } else if (!usuario.get().getContraseña().equals(password)) {
+        } else if (!usuario.get().getPassword().equals(password)) {
             return LoginStatus.ERROR_PASSWORD;
         } else {
             return LoginStatus.LOGIN_OK;
@@ -40,7 +40,7 @@ public class UsuarioService {
             throw new UsuarioServiceException("El usuario " + usuario.getEmail() + " ya está registrado");
         else if (usuario.getEmail() == null)
             throw new UsuarioServiceException("El usuario no tiene email");
-        else if (usuario.getContraseña() == null)
+        else if (usuario.getPassword() == null)
             throw new UsuarioServiceException("El usuario no tiene password");
         else return usuarioRepository.save(usuario);
     }

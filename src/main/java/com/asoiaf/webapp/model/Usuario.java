@@ -15,7 +15,7 @@ public class Usuario implements Serializable {
     private String email;
     private String nombre;
     private String role;
-    private String contraseña;
+    private String password;
     private String casaElegida;
 
     public Usuario() {
@@ -26,7 +26,7 @@ public class Usuario implements Serializable {
     }
 
     public boolean checkPassword(String password){
-        return contraseña.equals(password);
+        return password.equals(password);
     }
 
     public Long getId() {
@@ -61,12 +61,12 @@ public class Usuario implements Serializable {
         this.nombre = nombre;
     }
 
-    public String getContraseña() {
-        return contraseña;
+    public String getPassword() {
+        return password;
     }
 
-    public void setContraseña(String contraseña) {
-        this.contraseña = contraseña;
+    public void setPassword(String contraseña) {
+        this.password = contraseña;
     }
 
     public String getCasaElegida() {

@@ -24,7 +24,7 @@ a {
 a:hover,
 a:focus {
   text-decoration: none;
-  color: #D40;
+  color: rgb(192, 0, 0);
 }
 
 a:focus {
@@ -61,6 +61,7 @@ blockquote {
 
 .tm-font-big {
   font-size: 1.25rem;
+  background-color: #2f3031;
 }
 
 .tm-btn-primary {
@@ -86,7 +87,7 @@ blockquote {
 }
 
 .tm-navbar.scroll {
-  background-color: white;
+  background-color: #2f3031;
   border-bottom: 1px solid #e9ecef;
 }
 
@@ -270,18 +271,13 @@ blockquote {
 /* Testimonials */
 #testimonials {
   color: #2f3031;
-  background-image: url(../img/infinite-loop-02.jpg);
+  background-image: url(../img/loop2.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-size: 100%;
   position: relative;
 }
 
-@media (max-width: 991px) {
-  #testimonials {
-    background-image: url(../img/infinite-loop-02-mobile.jpg);
-  }
-}
 
 .tm-testimonials-content {
   position: relative;
@@ -309,6 +305,7 @@ blockquote {
   max-width: 290px;
   margin-left: 35px;
   margin-right: 35px;
+  color: white;
 }
 
 .tm-testimonial-item img {
@@ -328,6 +325,7 @@ blockquote {
   max-width: 650px;
   width: 100%;
   font-size: 0.9rem;
+  color: white ;
 }
 
 .tm-gallery-container {
@@ -516,7 +514,7 @@ figure.effect-honey:hover h2 i {
 #contact {
   color: white;
   background-color: #001828;
-  background-image: url(../img/infinite-loop-03.jpg);
+  background-image: url(../img/loop3.jpg);
   background-position: center;
   background-repeat: no-repeat;
   min-height: 980px;

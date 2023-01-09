@@ -73,9 +73,11 @@ public class LoginController {
 
         Usuario usuario = new Usuario(registroData.geteMail());
         usuario.setNombre(registroData.getNombre());
+        usuario.setContraseña(registroData.getPassword());
 
         usuarioService.registrar(usuario);
-        return "redirect:/login";
+        managerUserSession.logearUsuario(usuario.getId());
+        return "redirect:/";
    }
 
    @GetMapping("/logout")

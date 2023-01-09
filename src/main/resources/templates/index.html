@@ -45,7 +45,7 @@ https://www.tooplate.com/view/2117-infinite-loop
                   <a class="nav-link tm-nav-link" href="#gallery">Galeria del juego</a>
               </li>
               <li class="nav-item">
-                  <a class="nav-link tm-nav-link" href="#contact">Iniciar sesion</a>
+                  <a class="nav-link tm-nav-link" href="#contact" th:text="${usuario?.nombre} ?: 'Iniciar sesión'"></a>
               </li>                    
             </ul>
           </div>        

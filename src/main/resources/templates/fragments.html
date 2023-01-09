@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head th:fragment="head (titulo)">
+    <meta charset="UTF-8"/>
+    <title th:text="${titulo}"></title>
+    <link rel="stylesheet" th:href="@{/css/bootstrap.min.css}">
+    <link rel="stylesheet" th:href="@{/fontawesome-5.5/css/all.min.css}">
+    <link rel="stylesheet" th:href="@{/slick/slick.css}">
+    <link rel="stylesheet" th:href="@{/slick/slick-theme.css}">
+    <link rel="stylesheet" th:href="@{/magnific-popup/magnific-popup.css}">
+    <link rel="stylesheet" th:href="@{/css/tooplate-infinite-loop.css}">
+</head>
+
+
+
+<div th:fragment="javascript">
+    <script th:src="@{/js/jquery.min.js}"></script>
+    <script th:src="@{/js/popper.min.js}"></script>
+    <script th:src="@{/js/bootstrap.min.js}"></script>
+</div>
+
+</html>

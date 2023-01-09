@@ -3,12 +3,13 @@
 
 <head th:replace="fragments :: head (titulo='Registro')"></head>
 
-<body>
+<body class="bg-dark">
 <div class="container-fluid">
 
     <div class="row justify-content-center mb-3">
         <div class="col-auto">
-            <h2>Registro nuevo usuario</h2>
+            <h2  class="tm-hero-title mt-4 ">Crear nueva cuenta</h2>
+
         </div>
     </div>
 
@@ -33,14 +34,8 @@
                                    type="password" th:field="*{password}" required/>
                         </div>
 
-                        <div class="form-group">
-                            <label for="fechaNacimiento">Fecha de nacimiento</label>
-                            <input id="fechaNacimiento" class="form-control" name="fechaNacimiento"
-                                   placeholder="01-12-2019" th:field="*{fechaNacimiento}"/>
-                        </div>
-
-                        <button type="submit" class="btn btn-primary">Registro</button>
-                        <a class="btn btn-link" href="/login">Ir a login</a>
+                        <button type="submit" class="btn tm-btn-submit mb-0">Registrarse</button>
+                        <a class="btn btn-link" href="/login">Ya tengo una cuenta</a>
                     </div>
                 </div>
             </form>

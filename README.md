@@ -3,10 +3,14 @@ description: Web realizada con Spring Boot
 ---
 
 # A Song of Ice and Fire
-
-https://github.com/Patriesc/asoiaf-web.git
-
 Web terminada para introducir el juego de A Song of Ice and Fire para Android y Web.
+
+Enlace al repositorio: https://github.com/Patriesc/asoiaf-web.git
+
+### Gitbook
+https://app.gitbook.com/o/zSWtVCabXNxa8VNypUsO/s/QY2FJJOc0aJbp6yakrtn/
+
+
 
 ## Web
 
